@@ -1,5 +1,6 @@
 From centos:7
-LABEL centos_demo = "shashank'
+LABEL centos_demo = "shashank"
+
 RUN yum install httpd -y
 RUN yum install unzip -y
 RUN rm -rf /var/www/html/index.html
