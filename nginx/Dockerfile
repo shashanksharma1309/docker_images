@@ -2,6 +2,6 @@ FROM nginx
 LABEL nginxv="latest"
 
 RUN echo "<h1>........ HELLO EVERYONE THIS PAGE HOSTED VIA DOCKER IMAGE CREATION ........</h1>" > /usr/share/nginx/html/index.html
-EXPOSE 8080
+EXPOSE 80
 
-CMD nginx -DFOREGROUND
+CMD ["nginx", "-g", "daemon off;"]
